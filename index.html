@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <title>Bonne Pratique de Git</title>
+  </head>
+  <body>
+    <h1>Bonne Pratique de Git</h1>
+    <p>
+      Voici quelques bonnes pratiques à suivre lors de l'utilisation de Git :
+    </p>
+    <ul>
+      <li>
+        <strong
+          >create a new repository on the command line:</strong
+        >
+        voici les commandes a saisir .
+        <pre>      
+      echo "# git-test" >> README.md
+      git init
+      git add README.md
+      git commit -m "first commit"
+      git branch -M main
+      git remote add origin git@github.com:Elolo-GIT/git-test.git
+      git push -u origin main
+        </pre>
+        <pre><strong>Création d'un repository :</strong> 
+        Utilisez la commande <code>git init</code> pour créer un nouveau repository local, ou <code>git clone</code> pour cloner un repository existant.
+    </pre>
+      </li>
+      <li>
+        <pre><strong>Création de branches :</strong>
+        Utilisez la commande <code>git branch</code> pour créer de nouvelles branches pour le développement de fonctionnalités ou la correction de bugs.</pre>
+        <pre>git checkout -b nom-de-la-branche</pre>
+        <p>git push origin nom-de-la-branche</p>
+      </li>
+
+      <li>
+        <pre><strong>git push :</strong> Utilisez la commande <code>git push</code> pour envoyer vos commits locaux vers un repository distant, comme GitHub ou GitLab, afin de partager votre travail avec d'autres développeurs.
+        </pre>
+        <span>git add nom du fichier</span>
+        <p>git commit -m "message de commit (skip ci)" attention ce sont des crochet et non des parenthèse</p>
+        <p>git push origin nom-de-la-branche</p>
+      </li>
+
+      <li>
+        <pre><strong>Commit souvent :</strong> Faites des commits fréquents avec des
+        messages clairs pour faciliter la compréhension de l'historique du
+        projet.</pre>
+      </li>
+        <pre><strong>Cherry-pick :</strong> Utilisez la commande <code>git cherry-pick</code> pour appliquer des commits spécifiques d'une branche à une autre, ce qui vous permet de sélectionner des modifications particulières sans fusionner toute la branche.</pre>
+      </li>
+
+      <li>
+        <pre><strong>Utilisez des branches :</strong> Travaillez sur des branches
+        pour développer de nouvelles fonctionnalités ou corriger des bugs sans
+        affecter la branche principale.</pre>
+      </li>
+
+      </li>
+        <pre><strong>Rebase :</strong> Utilisez la commande <code>git rebase</code> pour réorganiser les commits d'une branche, ce qui permet de maintenir un historique linéaire et propre.</pre>
+      </li>
+      <li>
+       <pre><strong>Faites des pull requests :</strong> Utilisez les pull requests
+        pour revoir le code avant de le fusionner dans la branche principale, ce
+        qui améliore la qualité du code.</pre> 
+      </li>
+      <li>
+       <pre><strong>Gardez votre dépôt propre :</strong> Supprimez les branches
+        obsolètes et assurez-vous que votre dépôt ne contient pas de fichiers
+        inutiles.</pre> 
+      </li>
+      <li>
+       <pre><strong>Communiquez avec votre équipe :</strong> Utilisez les
+        commentaires dans les commits et les pull requests pour expliquer vos
+        changements et collaborer efficacement avec votre équipe.
+      </li>
+    </ul>
+  </body>
+</html>
